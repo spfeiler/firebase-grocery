@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List App</title>
+  </head>
+  <body>
+    <h1>Grocery List App</h1>
+    <h3>Add a Grocery Store:</h3>
+    <input type="text" id="storeTextBox" placeholder="Enter Store Here" />
+    <button id="saveButton">Add</button>
+    <h3>All Grocery Stores:</h3>
+    <ul id="storesUL">
+    </ul>
+
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBkHjvyAeoJ5AS35Z1nuCHDPT0qMmwg6b8",
+  authDomain: "grocery-app-3d414.firebaseapp.com",
+  databaseURL: "https://grocery-app-3d414.firebaseio.com",
+  projectId: "grocery-app-3d414",
+  storageBucket: "grocery-app-3d414.appspot.com",
+  messagingSenderId: "452562249174"
+};
+firebase.initializeApp(config);
+</script>
+  <script src="firebase-grocery.js"></script>
+</html>
